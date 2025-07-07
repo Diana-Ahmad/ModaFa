@@ -72,6 +72,8 @@ flex: 1;
     position: relative;
     border-radius: 14px;
 }
+
+
 .Nav .info .search:hover
 {
 border-color: #EC9024;}
@@ -95,9 +97,10 @@ border-color: #EC9024;}
     font-weight: bold;
     margin-right: 5px;
 }
+
 .Nav .info .search .select i{
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 0;
   
     width: 45px;
@@ -190,7 +193,7 @@ ul li i {
     position: absolute;
     flex-direction: column;
     background-color: #FFFBF8;
-    bottom: -131px;
+    bottom: -245px;
     width: 160px;
     left: -4px;
     padding: 0px 20px 10px 20px;
