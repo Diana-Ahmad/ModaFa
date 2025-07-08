@@ -1,59 +1,66 @@
+/* Reset and base styles */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
-
-font-family: 'Raleway', sans-serif;
-perspective: 700px;
- background-color: #FFFBF8;
-  color: #333;
-
+    font-family: 'Raleway', sans-serif;
+    perspective: 700px;
+    background-color: #FFFBF8;
+    color: #333;
 }
+
+/* Base elements */
 a{
     text-decoration: none;
 }
 li{
     list-style: none;
 }
+
+/* Container layout */
 .container{
-     margin: 0px 60px;
- 
-    
+    margin: 0px 60px;
 }
+
+/* ============================
+        Navigation (Nav)
+============================ */
+
+/* Main nav wrapper */
 .Nav{
     position: relative;
 }
+
+/* Top bar of the nav */
 .Nav .top{
     display: flex;
     justify-content: space-between;
-      align-items: center;
-   
+    align-items: center;
     padding: 2px;
     color:#333;
     border-bottom: 1px solid gray;
-    background-color:#EC9024
-
-;
+    background-color:#EC9024;
 }
+
 .Nav .top span i{
     margin-right: 5px;
     color:#333;
 }
 .Nav .top .in{
     position: relative;
-      border-right: 1px solid gray;
+    border-right: 1px solid gray;
 }
 .Nav .top span {
-flex: 1; 
-  text-align: center; 
-  padding: 12px 10px;
-  font-size: 20px;
-  
-
+    flex: 1; 
+    text-align: center; 
+    padding: 12px 10px;
+    font-size: 20px;
 }
 
+/* Info section with logo, search, icons */
 .Nav .info{
     display: flex;
     justify-content: space-between;
@@ -63,6 +70,8 @@ flex: 1;
     width: 200px;
     height: auto;
 }
+
+/* Search bar */
 .Nav .info .search{
     display: flex;
     gap: 20px;
@@ -72,11 +81,9 @@ flex: 1;
     position: relative;
     border-radius: 14px;
 }
-
-
-.Nav .info .search:hover
-{
-border-color: #EC9024;}
+.Nav .info .search:hover {
+    border-color: #EC9024;
+}
 .Nav .info .search input{
     border: none;
     color: #333;
@@ -97,12 +104,10 @@ border-color: #EC9024;}
     font-weight: bold;
     margin-right: 5px;
 }
-
 .Nav .info .search .select i{
     position: absolute;
     top: 0;
     right: 0;
-  
     width: 45px;
     height: 100%;
     display: flex;
@@ -112,6 +117,8 @@ border-color: #EC9024;}
     font-size: 2rem;
     cursor: pointer;
 }
+
+/* Icons next to search */
 .Nav .info ul{
     display: flex;
     gap: 20px;
@@ -131,34 +138,31 @@ border-color: #EC9024;}
     border-color: transparent;
 }
 ul li {
-  margin: 0 10px;
+    margin: 0 10px;
+}
+ul li i {
+    font-size: 18px;
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
 }
 
-ul li i {
-  font-size: 18px;
-  color: white;
-  background-color: #333;
-  padding: 10px;
-  border-radius: 50%;
-  transition: background-color 0.3s;
-}
+/* Navigation links section */
 .Nav .links{
     position: absolute;
     width: 100%;
-    /* background-color:  #ddd; */
     padding: 1rem 6rem;
     color: black;
     border-bottom: 1px solid #e5e5e5;
-        border-top: 1px solid #e5e5e5;
-        height: 5rem;
-
-
+    border-top: 1px solid #e5e5e5;
+    height: 5rem;
 }
 .Nav .links ul{
     display: flex;
     gap: 3rem;
 }
-
 .Nav .links ul a{
     color: #333;
     cursor: pointer;
@@ -167,10 +171,6 @@ ul li i {
 .Nav .links ul li {
     position: relative;
     padding: 6px;
-}
-
-.Nav .links ul li i{
-    position: relative;
 }
 .Nav .links ul span{
     font-size: 22px;
@@ -186,6 +186,8 @@ ul li i {
     padding: 2px 4px;
     font-size: 16px;
 }
+
+/* Dropdown Menu */
 .list{
     position: relative;
 }
@@ -203,57 +205,53 @@ ul li i {
 }
 .list .dropdown li{
     letter-spacing: 2px;
- 
 }
 .list:hover .dropdown{
     visibility: visible;
-
 }
 .list .dropdown li:hover {
-  background-color: #EC9024; 
-
+    background-color: #EC9024; 
 }
-/* Start Hero */
+
+/* ============================
+            Hero Section
+============================ */
 .Hero{
-   height: 600px;
+    height: 600px;
     background-image: url(../image/pic.PNG);
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 67px;
     position: relative;
     color: white;
-    text-align: center;}
-    .Hero::after{
+    text-align: center;
+}
+.Hero::after{
     position: absolute;
     content: '';
     width: 100%;
-
     top: 0;
     left: 0;
     background-color: rgb(0 0 0 / 75%);
     z-index: 1;
 }
 
-
-
-
-/* End Hero */
-
-
-
-
+/* ============================
+        General Container
+============================ */
 .container1{
- display: flex;
- flex-direction: column;
- gap: 30px;
- box-sizing: border-box;
-overflow: hidden;
-margin: 0px 0px;
-padding: 50px;
-
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0px 0px;
+    padding: 50px;
 }
 
-/* End Sale */
+/* ============================
+        Special Sale Section
+============================ */
 .Spacial .boxs{
     display: flex;
     justify-content: space-between;
@@ -262,14 +260,13 @@ padding: 50px;
 }
 .Spacial .boxs .box{
     text-align: center;
-    box-shadow: 0px 0px 14px 2px  rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.05);
     padding: 1rem 2.5rem;
     position: relative;
 }
 .Spacial .boxs .box:hover::before{
     visibility: visible;
 }
-
 .Spacial .boxs .box img{
     width: 200px;
     height: 100px;
@@ -286,7 +283,7 @@ padding: 50px;
     margin-bottom: 10px;
 }
 .Spacial .boxs .box ul li i{
-    color:  lightslategrey;
+    color: lightslategrey;
 }
 .Spacial .boxs .box p{
     font-size: 20px;
@@ -300,7 +297,6 @@ padding: 50px;
     border-radius: 4px;
     cursor: pointer;
     margin: 15px 0px;
-
 }
 .Spacial .boxs .box .foot{
     display: flex;
@@ -311,20 +307,17 @@ padding: 50px;
     color: #EC9024;
 }
 .Spacial{
-      width: 100%; /* تجعل الحاوية تغطي عرض الشاشة بالكامل */
-  max-width: 100%; /* عدم وضع حد أقصى للعرض */
-  margin: 0 auto; /* توسيط الحاوية */
-  padding: 1rem 1%; /* إضافة فراغ بسيط من الجانبين */
-  /* border: 6px solid #ddd; إطار حول الحاوية */
-  border-radius: 10px; /* جعل الزوايا دائرية */
-  box-sizing: border-box;
- 
-    background-color: #fff; /* خلفية بيضاء ناصعة */
-  border-radius: 10px;     /* زوايا ناعمة */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* ظل خفيف */
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem 1%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-/* End Spacial */
-/* Start Men */
+
+/* ============================
+        Men’s Collection Section
+============================ */
 .card{
     display: flex;
     justify-content: space-evenly;
@@ -334,9 +327,9 @@ padding: 50px;
     box-sizing: border-box;
 }
 .df{
- color: gray;
- position: relative;
- font-weight: 700;
+    color: gray;
+    position: relative;
+    font-weight: 700;
 }
 .df::after{
     position: absolute;
@@ -348,25 +341,21 @@ padding: 50px;
     bottom: -12px;
 }
 
-
+/* Product boxes in Men section */
 .card .box2,
 .card .box3 {
     flex: 1;
-    height: 300px; /* كان 400px */
+    height: 300px;
     transition: 0.3s;
     width: 30%;
     object-fit: fill;
-  
 }
-
 .card .box2 img,
 .card .box3 img {
     width: 100%;
-    height: 200px; /* حجم مخصص للصورة */
-    object-fit: cover; /* أو جربي cover حسب النتيجة المرغوبة */
+    height: 200px;
+    object-fit: cover;
 }
-
-
 .card .box1{
     flex: 2;
     position: relative;
@@ -376,10 +365,8 @@ padding: 50px;
     height: 100%;
     width: 100%;
 }
-
 .card .box1 .text{
     position: absolute;
-    content: '';
     width: 100%;
     height: 100%;
     top: 0;
@@ -394,32 +381,17 @@ padding: 50px;
     gap: 10px;
 }
 .card .box1 .text h2{
- font-size: 3rem;
+    font-size: 3rem;
 }
 .card .box1 .text button{
- border: none;
- background-color:#EC9024;
- color: white;
- padding: 1rem 3rem;
- font-size: 1.5rem;
- cursor: pointer;
- font-weight: normal;
+    border: none;
+    background-color:#EC9024;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
-.card .box2{
-    flex: 0 0 20%;
-    height: 400px;
-    transition: .3s;
-    width: 30%;
-}
-.card .box2:hover{
-    transform: scale(1.1);
-}
-.card .box3{
-  flex: 0 0 20%;   
-    height: 400px;
-    transition: .3s;
-
-}
+.card .box2:hover,
 .card .box3:hover{
     transform: scale(1.1);
 }
@@ -457,26 +429,21 @@ padding: 50px;
     color:#EC9024;
 }
 .container4{
-          width: 100%; /* تجعل الحاوية تغطي عرض الشاشة بالكامل */
-  /* max-width: 100%; عدم وضع حد أقصى للعرض */
-  /* margin: 0 auto; توسيط الحاوية */
-  padding: 1rem 1%; /* إضافة فراغ بسيط من الجانبين */
-  /* border: 6px solid #ddd; إطار حول الحاوية */
-  border-radius: 10px; /* جعل الزوايا دائرية */
-  box-sizing: border-box;
- overflow-x:hidden ;
-    background-color: #fff; /* خلفية بيضاء ناصعة */
-  border-radius: 19px;     /* زوايا ناعمة */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* ظل خفيف */
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem 1%;
+    background-color: #fff;
+    border-radius: 19px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    overflow-x:hidden;
 }
-/* End Men */
-/* Start Delivery */
 
+/* Delivery Section — Placeholder (Empty styles) */
 
-
-
-/* End Delivery */
-/* Start Product7 */
+/* ============================
+        Product7 Section
+============================ */
 .Product7{
     margin: 40px 0px 40px 100px;
 }
@@ -507,45 +474,34 @@ padding: 50px;
     align-items: center;
     gap: 10px;
 }
-/* الحاوية الثابتة */
-.Product7 .box {
-  width: 24%;
-  height: 399px;
-  perspective: 1200px;
+.Product7 .box{
+    width: 24%;
+    height: 399px;
+    perspective: 1200px;
 }
-
-/* العنصر القابل للدوران */
-.Product7 .box .inner {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transition: transform 0.4s ease-out;
-  transform-style: preserve-3d;
+.Product7 .box .inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.4s ease-out;
+    transform-style: preserve-3d;
 }
-
-/* عند تحويم الماوس يتم قلب .inner فقط */
-.Product7 .box:hover .inner {
-  transform: rotateY(180deg);
+.Product7 .box:hover .inner{
+    transform: rotateY(180deg);
 }
-
-/* وجه أمامي */
 .Product7 .box .front,
-.Product7 .box .back {
-  position: absolute;
-  width: 70%;
-  height: 90%;
-  backface-visibility: hidden;
-  border-radius: 10px;
-  overflow: hidden;
- 
+.Product7 .box .back{
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
 }
-
-/* الجهة الخلفية */
-.Product7 .box .back {
+.Product7 .box .back{
     background-color: #fff;
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
-
 .Product7 .box .back .rating{
     display: flex;
     gap: 20px;
@@ -556,9 +512,6 @@ padding: 50px;
     display: flex;
     gap: 3px;
     align-items: center;
-}
-.Product7 .box .back .rating ul li{
-    display: inline;
 }
 .Product7 .box .back .rating ul li i{
     color: gold;
@@ -571,7 +524,6 @@ padding: 50px;
 .Product7 .box .back .size{
     display: flex;
     gap: 10px;
-
 }
 .Product7 .box .back .size li{
     background-color: #EC9024;
@@ -596,11 +548,10 @@ padding: 50px;
 .Product7 .box .back .rating span{
     color: gray;
     font-size: 1rem;
-    margin: 0px;
 }
 .Product7 .box img{
     max-width: 100%;
-    min-width:100% ;
+    min-width: 100%;
     height: 100%;
     object-fit: fill;
 }
@@ -624,7 +575,6 @@ padding: 50px;
 }
 .Product7 .box ul li{
     color: gold;
-
 }
 .Product7 .box p{
     font-weight: bold;
@@ -632,60 +582,83 @@ padding: 50px;
     padding: 5px;
     border-radius: 6px;
 }
-/* End Product7 */
+
+/* ============================
+        Features Banner
+============================ */
 .features-container {
-  display: flex;
-  justify-content: space-between;
-  background-color: #EC9024;
-  padding: 40px;
-  gap: 20px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EC9024;
+    padding: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-
 .sale {
-  flex: 1;
-  text-align: left;
-  border-right: 1px solid #000;
-  padding: 0 20px;
-  min-width: 200px;
+    flex: 1;
+    text-align: left;
+    border-right: 1px solid #000;
+    padding: 0 20px;
+    min-width: 200px;
 }
-
 .sale:last-child {
-  border-right: none;
+    border-right: none;
 }
-
 .sale i {
-  font-size: 32px;
-  margin-bottom: 10px;
-  color: #000;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #000;
 }
-
 .sale h3 {
-  margin: 10px 0 5px;
-  font-size: 18px;
-  color: #000;
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #000;
+}
+.sale p {
+    font-size: 14px;
+    color: #000;
 }
 
-.sale p {
-  font-size: 14px;
-  color: #000;
-}
-/* start footer */
+/* ============================
+        Footer
+============================ */
 .footer{
     text-align: center;
     padding: 3rem;
     background-color: #333;
     height: 10rem;
     position: relative;
-  
 }
-
-
 .footer p{
     margin-bottom: 10px;
     color:white;
     letter-spacing: 0px;
     font-size: 20px;
 }
+/* mobil screen*/
+@media (max-width: 768px) {
+  .header, .nav, .search-bar, .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  .search-bar input,
+  .search-bar select {
+    width: 90%;
+    margin: 5px 0;
+  }
 
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-section img {
+    width: 80%;
+  }
+
+  .hero-section .promo {
+    width: 90%;
+    margin-top: 10px;
+  }
+}
